@@ -3,7 +3,11 @@
 Verbose:
 
 ```html
-<template be-deobjectified>
+<template be-deobjectified='{
+    "obj": {
+        
+    },
+}'>
     <!-- wrapperOpen -->
     <form>
     <!-- /wrapperOpen -->
@@ -27,7 +31,7 @@ Verbose:
 Succinct:
 
 ```html
-<template be-deobjectified>
+<template be-deobjectified="https://example.com/api/myapi?id=123">
     <form o2h-wrapper>
         <details o2h-object-prop>
             <summary>$0</summary>
