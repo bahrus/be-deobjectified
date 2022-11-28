@@ -1,5 +1,15 @@
 # be-deobjectified
 
+Vague mission statement
+
+In the progressive web application era, HTML is a much better format for sending the end user information.  Unfortunately, 99% of API's don't provide an HTML (or even XML) output format.  
+
+[o2h-cw](https://github.com/bahrus/o2h-cw) is a cloudflare worker that provides a way to turn any public-facing API into an API that provides HTML.  The shape of the HTML can be configured via a declarative JSON configuration.
+
+But this solution doesn't work in an intranet setting, where the api can't be exposed as a cloudflare worker.  And some scenarios need to be more local to the browser.
+
+So be-deobjective provides a way to do the same thing in a browser worker thread (like a service worker).  Hopefully.  Worst case, it runs the conversion in the main thread, using the same o2h library.
+
 Verbose:
 
 ```html
